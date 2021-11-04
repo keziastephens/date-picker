@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+*:focus {
+    outline: none;
+}
+html{
+    font-size: 65.5%;
+}
+textarea:focus{
+    outline: none;
+}
+.form-container{
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+}
+
+.form{
+    overflow: hidden;
+    height: 70%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 2.5rem;
+}
+
+.form-item{
+    height: 80%;
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    border-right: 0.1rem solid rgba(0,0,0,0.1);
+
+}
+
+.form-input{
+    padding: 0.5rem;
+    background: none;
+    border: none;
+}
+
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+color: blue;
+}
+
+.submitBtn{
+    width: 20%;
+    background: none;
+    padding: 1rem;
+    border:none;
+    cursor: pointer;
+}
+
+.submitBtn:hover{
+    color: lightsalmon;
+}
+
+
